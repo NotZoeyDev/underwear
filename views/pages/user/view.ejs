@@ -1,0 +1,18 @@
+<div class="user-header">
+    <div class="banner">
+        <img src="/imgs/users/<%- pageuser.id %>/banner.png" />
+    </div>
+    <div class="profile-pic">
+        <img src="/imgs/users/<%- pageuser.id %>/pic.jpg"></img>
+    </div>
+</div>
+
+<div class="user-info">
+    <div class="info-top">
+        <% if(user && pageuser.id == user.id) { %>
+            <p>Your profile</p>
+        <% } else { %>
+        <p><%- pageuser.username %>'s profile</p>
+        <% } %>
+    </div>
+</div>

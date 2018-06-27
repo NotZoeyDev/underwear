@@ -1,0 +1,83 @@
+.viewer {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+}
+
+.viewer .image {
+    flex-basis: 75%;
+    margin: 10px;
+}
+
+.viewer .image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.viewer .info {
+    flex-basis: 25%;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    background-color: #090D12;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.viewer .info p {
+    margin: 0px;
+}
+
+.viewer .info .title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.viewer .info .subtitle {
+    padding: 5px;
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.viewer .info a {
+    text-decoration: none;
+    color: white;
+}
+
+.viewer .info .description {
+    margin-top: 20px;
+    font-size: 1.2em;
+    margin-bottom: auto;
+}
+
+.viewer .info .tags {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.viewer .info .tag {
+    background-color: #1d1d1d;
+    padding: 5px;
+    margin: 5px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.comments .form {
+    margin: 0px 20px 10px 10px;
+    padding: 5px;
+}
+
+.comments .form h1 {
+    margin: 0px;
+    font-family: "Arial";
+}

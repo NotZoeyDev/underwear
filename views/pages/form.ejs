@@ -1,0 +1,7 @@
+<% if(typeof message != "undefined") { %>
+    <p><%- message %></p>
+<% } %>
+
+<form action="/<%= action %>" method="post" encType="multipart/form-data">
+    <%- include('./forms/' + form); %>
+</form>

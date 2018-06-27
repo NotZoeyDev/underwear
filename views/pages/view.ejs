@@ -1,0 +1,44 @@
+<div class="viewer">
+    <div class="image">
+        <img src="/imgs/images/<%= post._id %>/<%= post.filename %>"/>
+    </div>
+
+    <div class="info">
+        <p class="title"><%= post.title %></p>
+
+        <p class="subtitle"><a href="/user/<%= pageuser.username %>"><%= pageuser.username %></a><span title="<%= post.uploaded.toLocaleDateString("en-US", {hour:"2-digit", minute:"2-digit", second:"2-digit"}) %>"><%= post.uploaded.toLocaleDateString("en-US", {month:"long", year:"numeric", day:"numeric"}) %></span></p>
+
+        <p class="description"><%= post.description %></p>
+
+        <div class="tags">
+            <% post.tags.forEach(function(tag) { %>
+                <span class="tag"><%= tag %></span>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<div class="comments">
+    <div class="form">
+        <h1>Post your comment here!</h1>
+        <form>
+            <textarea height="300px"></textarea>
+            <input type="submit" />
+        </form>
+    </div>
+    <div class="container">
+    <% for(var i = 0; i < 10; i++) { %>
+        <div class="comment">
+            <div class="info">
+                <p><a>poster</a><span>date</span></p>
+            </div>
+            <p>
+                Duis labore ad et ut cupidatat. Magna enim commodo cillum cupidatat magna fugiat deserunt aute ullamco fugiat anim aliquip velit. Ea amet pariatur qui ea ea cillum exercitation Lorem anim incididunt sunt mollit magna. Dolor amet incididunt qui consectetur sit cupidatat et fugiat Lorem officia adipisicing amet ullamco. Laborum est cillum duis ipsum nisi dolor consectetur irure anim incididunt eiusmod officia labore duis.
+            </p>
+            <div class="options">
+                
+            </div>
+        </div>
+    <% } %>
+    </div>
+</div>

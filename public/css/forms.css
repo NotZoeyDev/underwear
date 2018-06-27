@@ -1,0 +1,17 @@
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+main form input {
+    padding: 2px 5px 2px 5px;
+    margin: 5px;
+}
+
+main form textarea {
+    padding: 2px 5px 2px 5px;
+    margin: 5px;
+    resize: vertical;
+    height: 100px;
+}

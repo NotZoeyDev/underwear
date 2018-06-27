@@ -1,0 +1,6 @@
+node_modules/
+database/MongoDatabase/
+database/mongo.bat
+config.js
+uploads/
+.DS_Store
